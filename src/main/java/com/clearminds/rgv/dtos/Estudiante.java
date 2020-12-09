@@ -9,17 +9,19 @@ public class Estudiante {
 	private String apellido;
 	private int id;
 
+	public Estudiante() {
+	}
+
+	public Estudiante(String nombre, String apellido) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+
 	public Estudiante(String nombre, String apellido, int id) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
-	}
-
-	public Estudiante(String nombre, String apellido) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
 	}
 
 	@Override
